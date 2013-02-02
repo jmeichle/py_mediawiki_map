@@ -1,4 +1,4 @@
 py_mediawiki_map
 ================
 
-Wiki to hold code to map mediawiki to DOT digraphs
+This repo holds my python script to create DOT digraph's from a Mediawiki, or create a Mediawiki from a DOT file. 
