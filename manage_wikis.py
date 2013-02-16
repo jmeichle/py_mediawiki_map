@@ -152,7 +152,7 @@ def buildDot():
 	#print "Building Wiki...."
 	newGraph = pydot.Dot(graph_type='digraph')
 	for edge in edgeList:
-		graphEdge = pydot.Edge(edge[0], edge[1])
+		graphEdge = pydot.Edge(edge[0].encode('ascii', 'ignore'), edge[1].encode('ascii', 'ignore'))
 		newGraph.add_edge(graphEdge)
 	if options.saveDot:
 		newGraph.write_raw(options.saveDot)
